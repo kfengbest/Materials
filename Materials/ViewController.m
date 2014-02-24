@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import"MKNetworkKit.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+//    MKNetworkEngine *engine = [[MKNetworkEngine alloc] initWithHostName:@"www.baidu.com" customHeaderFields:nil];
+//    MKNetworkOperation *op = [engine operationWithPath:@"" params:nil httpMethod:@"GET" ssl:NO];
+//    [op addCompletionHandler:^(MKNetworkOperation *operation) {
+//        NSLog(@"[operation responseData]-->>%@", [operation responseString]);
+//    }errorHandler:^(MKNetworkOperation *errorOp, NSError* err) {
+//        NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
+//    }];
+//    [engine enqueueOperation:op];
+    
 }
 
 - (void)didReceiveMemoryWarning
