@@ -39,6 +39,8 @@
 		1210FA2618BE1690009843C0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA2518BE1690009843C0 /* ImageIO.framework */; };
 		123087D518C720F800453DDE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 123087D218C720F800453DDE /* README.md */; };
 		123087D618C720F800453DDE /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087D418C720F800453DDE /* XMLReader.m */; };
+		123087D918C7527100453DDE /* MaterialDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087D818C7527100453DDE /* MaterialDetailsViewController.m */; };
+		123087DC18C752D200453DDE /* MaterialListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087DB18C752D200453DDE /* MaterialListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,10 @@
 		123087D218C720F800453DDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		123087D318C720F800453DDE /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		123087D418C720F800453DDE /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		123087D718C7527100453DDE /* MaterialDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialDetailsViewController.h; sourceTree = "<group>"; };
+		123087D818C7527100453DDE /* MaterialDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDetailsViewController.m; sourceTree = "<group>"; };
+		123087DA18C752D200453DDE /* MaterialListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialListViewController.h; sourceTree = "<group>"; };
+		123087DB18C752D200453DDE /* MaterialListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,10 @@
 				1210F9DA18BB8290009843C0 /* ViewController.m */,
 				1210F9DC18BB8290009843C0 /* Images.xcassets */,
 				1210F9C818BB8290009843C0 /* Supporting Files */,
+				123087D718C7527100453DDE /* MaterialDetailsViewController.h */,
+				123087D818C7527100453DDE /* MaterialDetailsViewController.m */,
+				123087DA18C752D200453DDE /* MaterialListViewController.h */,
+				123087DB18C752D200453DDE /* MaterialListViewController.m */,
 			);
 			path = Materials;
 			sourceTree = "<group>";
@@ -367,6 +377,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1210FA1A18BB835B009843C0 /* Reachability.m in Sources */,
+				123087DC18C752D200453DDE /* MaterialListViewController.m in Sources */,
+				123087D918C7527100453DDE /* MaterialDetailsViewController.m in Sources */,
 				1210F9DB18BB8290009843C0 /* ViewController.m in Sources */,
 				1210FA1818BB835B009843C0 /* MKNetworkEngine.m in Sources */,
 				1210FA1418BB835B009843C0 /* NSDictionary+RequestEncoding.m in Sources */,
