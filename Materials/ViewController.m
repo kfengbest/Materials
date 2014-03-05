@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import"MKNetworkKit.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
 
 @interface ViewController ()
 
@@ -38,4 +40,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)loadImage:(id)sender {
+    
+    NSString* imgUrl = @"http://s1.bdstatic.com/r/www/cache/static/global/img/wsLogo2_0871cb28.png";
+    
+    [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:imgUrl] options:0 progress:^(NSUInteger receivedSize, long long expectedSize) {
+        
+    } completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+        if (image && finished) {
+            self.imageView1.image = image;
+        }
+    }];
+}
 @end

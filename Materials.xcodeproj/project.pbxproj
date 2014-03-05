@@ -35,6 +35,8 @@
 		1210FA1C18BB836C009843C0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA1B18BB836C009843C0 /* CFNetwork.framework */; };
 		1210FA1E18BB837C009843C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA1D18BB837C009843C0 /* SystemConfiguration.framework */; };
 		1210FA2018BB838A009843C0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA1F18BB838A009843C0 /* Security.framework */; };
+		1210FA2418BE1642009843C0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA2318BE1642009843C0 /* SDWebImage.framework */; };
+		1210FA2618BE1690009843C0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA2518BE1690009843C0 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		1210FA1B18BB836C009843C0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1210FA1D18BB837C009843C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1210FA1F18BB838A009843C0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1210FA2318BE1642009843C0 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		1210FA2518BE1690009843C0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1210FA2618BE1690009843C0 /* ImageIO.framework in Frameworks */,
 				1210FA2018BB838A009843C0 /* Security.framework in Frameworks */,
 				1210FA1E18BB837C009843C0 /* SystemConfiguration.framework in Frameworks */,
 				1210FA1C18BB836C009843C0 /* CFNetwork.framework in Frameworks */,
 				1210F9C418BB8290009843C0 /* CoreGraphics.framework in Frameworks */,
+				1210FA2418BE1642009843C0 /* SDWebImage.framework in Frameworks */,
 				1210F9C618BB8290009843C0 /* UIKit.framework in Frameworks */,
 				1210F9C218BB8290009843C0 /* Foundation.framework in Frameworks */,
 			);
@@ -143,6 +149,8 @@
 		1210F9C018BB8290009843C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1210FA2518BE1690009843C0 /* ImageIO.framework */,
+				1210FA2318BE1642009843C0 /* SDWebImage.framework */,
 				1210FA1F18BB838A009843C0 /* Security.framework */,
 				1210FA1D18BB837C009843C0 /* SystemConfiguration.framework */,
 				1210FA1B18BB836C009843C0 /* CFNetwork.framework */,
@@ -490,6 +498,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/fengka/Documents/Src/Projects/Materials,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Materials/Materials-Prefix.pch";
 				INFOPLIST_FILE = "Materials/Materials-Info.plist";
@@ -503,6 +515,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/fengka/Documents/Src/Projects/Materials,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Materials/Materials-Prefix.pch";
 				INFOPLIST_FILE = "Materials/Materials-Info.plist";
