@@ -104,29 +104,7 @@
     
 */
     
-//    http://exchange.services-staging.autodesk.com/Search/restapi/v1/contents?q=contentId:3177e620-51b6-4b1b-b85e-3863c15b4b57&detail=5&access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI
-    
-    MKNetworkEngine *engine = [[MKNetworkEngine alloc] initWithHostName:@"exchange.services-staging.autodesk.com" customHeaderFields:nil];
-    NSMutableDictionary *dic=[[NSMutableDictionary alloc] init];
-    [dic setObject:@"contentId:3177e620-51b6-4b1b-b85e-3863c15b4b57" forKey:@"q"];
-    [dic setObject: @"5" forKey:@"detail"];
-    [dic setObject: @"GC---Y0DMq0bzUwoyIAagT6qG1L9kHI" forKey:@"access_token"];
-    
-    MKNetworkOperation *op = [engine operationWithPath:@"/Search/restapi/v1/contents" params:dic httpMethod:@"GET" ssl:NO];
-    [op addCompletionHandler:^(MKNetworkOperation *operation) {
-        
-        NSData* data = [operation responseData];
-        NSError *error = nil;
-        
-        NSDictionary *dict = [XMLReader dictionaryForXMLData:data
-                                                     options:XMLReaderOptionsProcessNamespaces
-                                                       error:&error];
-        
-        // NSLog(@"[operation responseData]-->>%@", [operation responseData]);
-    }errorHandler:^(MKNetworkOperation *errorOp, NSError* err) {
-        NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
-    }];
-    [engine enqueueOperation:op];
+
     
 }
 @end

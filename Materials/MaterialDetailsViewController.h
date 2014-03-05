@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MaterialDetailsViewController : UIViewController
+@interface MaterialDetailsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic,strong)NSString* uuid;
+@property (strong, nonatomic) IBOutlet UITableView *mTableView;
 @end

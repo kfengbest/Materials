@@ -41,6 +41,9 @@
 		123087D618C720F800453DDE /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087D418C720F800453DDE /* XMLReader.m */; };
 		123087D918C7527100453DDE /* MaterialDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087D818C7527100453DDE /* MaterialDetailsViewController.m */; };
 		123087DC18C752D200453DDE /* MaterialListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087DB18C752D200453DDE /* MaterialListViewController.m */; };
+		123087E018C758A500453DDE /* Material.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087DF18C758A500453DDE /* Material.m */; };
+		123087E318C758B900453DDE /* Classification.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E218C758B900453DDE /* Classification.m */; };
+		123087E618C758CC00453DDE /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E518C758CC00453DDE /* Library.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,12 @@
 		123087D818C7527100453DDE /* MaterialDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDetailsViewController.m; sourceTree = "<group>"; };
 		123087DA18C752D200453DDE /* MaterialListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialListViewController.h; sourceTree = "<group>"; };
 		123087DB18C752D200453DDE /* MaterialListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialListViewController.m; sourceTree = "<group>"; };
+		123087DE18C758A500453DDE /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
+		123087DF18C758A500453DDE /* Material.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Material.m; sourceTree = "<group>"; };
+		123087E118C758B900453DDE /* Classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classification.h; sourceTree = "<group>"; };
+		123087E218C758B900453DDE /* Classification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classification.m; sourceTree = "<group>"; };
+		123087E418C758CC00453DDE /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
+		123087E518C758CC00453DDE /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +185,7 @@
 		1210F9C718BB8290009843C0 /* Materials */ = {
 			isa = PBXGroup;
 			children = (
+				123087DD18C757C500453DDE /* Model */,
 				123087D118C720F800453DDE /* XMLReader */,
 				1210F9F918BB835B009843C0 /* MKNetworkKit */,
 				1210F9D018BB8290009843C0 /* AppDelegate.h */,
@@ -275,6 +285,19 @@
 				123087D418C720F800453DDE /* XMLReader.m */,
 			);
 			path = XMLReader;
+			sourceTree = "<group>";
+		};
+		123087DD18C757C500453DDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				123087DE18C758A500453DDE /* Material.h */,
+				123087DF18C758A500453DDE /* Material.m */,
+				123087E118C758B900453DDE /* Classification.h */,
+				123087E218C758B900453DDE /* Classification.m */,
+				123087E418C758CC00453DDE /* Library.h */,
+				123087E518C758CC00453DDE /* Library.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,10 +405,13 @@
 				1210F9DB18BB8290009843C0 /* ViewController.m in Sources */,
 				1210FA1818BB835B009843C0 /* MKNetworkEngine.m in Sources */,
 				1210FA1418BB835B009843C0 /* NSDictionary+RequestEncoding.m in Sources */,
+				123087E018C758A500453DDE /* Material.m in Sources */,
 				1210F9D218BB8290009843C0 /* AppDelegate.m in Sources */,
 				1210FA1218BB835B009843C0 /* NSData+MKBase64.m in Sources */,
 				123087D618C720F800453DDE /* XMLReader.m in Sources */,
 				1210F9CE18BB8290009843C0 /* main.m in Sources */,
+				123087E318C758B900453DDE /* Classification.m in Sources */,
+				123087E618C758CC00453DDE /* Library.m in Sources */,
 				1210FA1918BB835B009843C0 /* MKNetworkOperation.m in Sources */,
 				1210FA1618BB835B009843C0 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				1210FA1718BB835B009843C0 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
