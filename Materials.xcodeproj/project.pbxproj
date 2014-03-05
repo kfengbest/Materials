@@ -37,6 +37,8 @@
 		1210FA2018BB838A009843C0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA1F18BB838A009843C0 /* Security.framework */; };
 		1210FA2418BE1642009843C0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA2318BE1642009843C0 /* SDWebImage.framework */; };
 		1210FA2618BE1690009843C0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210FA2518BE1690009843C0 /* ImageIO.framework */; };
+		123087D518C720F800453DDE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 123087D218C720F800453DDE /* README.md */; };
+		123087D618C720F800453DDE /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087D418C720F800453DDE /* XMLReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,9 @@
 		1210FA1F18BB838A009843C0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1210FA2318BE1642009843C0 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		1210FA2518BE1690009843C0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		123087D218C720F800453DDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		123087D318C720F800453DDE /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		123087D418C720F800453DDE /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +170,7 @@
 		1210F9C718BB8290009843C0 /* Materials */ = {
 			isa = PBXGroup;
 			children = (
+				123087D118C720F800453DDE /* XMLReader */,
 				1210F9F918BB835B009843C0 /* MKNetworkKit */,
 				1210F9D018BB8290009843C0 /* AppDelegate.h */,
 				1210F9D118BB8290009843C0 /* AppDelegate.m */,
@@ -251,6 +257,16 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		123087D118C720F800453DDE /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				123087D218C720F800453DDE /* README.md */,
+				123087D318C720F800453DDE /* XMLReader.h */,
+				123087D418C720F800453DDE /* XMLReader.m */,
+			);
+			path = XMLReader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,6 +345,7 @@
 			files = (
 				1210F9D818BB8290009843C0 /* Main_iPad.storyboard in Resources */,
 				1210F9DD18BB8290009843C0 /* Images.xcassets in Resources */,
+				123087D518C720F800453DDE /* README.md in Resources */,
 				1210F9D518BB8290009843C0 /* Main_iPhone.storyboard in Resources */,
 				1210F9CC18BB8290009843C0 /* InfoPlist.strings in Resources */,
 			);
@@ -355,6 +372,7 @@
 				1210FA1418BB835B009843C0 /* NSDictionary+RequestEncoding.m in Sources */,
 				1210F9D218BB8290009843C0 /* AppDelegate.m in Sources */,
 				1210FA1218BB835B009843C0 /* NSData+MKBase64.m in Sources */,
+				123087D618C720F800453DDE /* XMLReader.m in Sources */,
 				1210F9CE18BB8290009843C0 /* main.m in Sources */,
 				1210FA1918BB835B009843C0 /* MKNetworkOperation.m in Sources */,
 				1210FA1618BB835B009843C0 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
