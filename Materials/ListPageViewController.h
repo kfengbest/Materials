@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ListPageViewController : UICollectionViewController
+@property (nonatomic,strong)NSString* classification;
 
 @end

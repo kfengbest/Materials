@@ -43,7 +43,7 @@
                                     <outlet property="countLabel" destination="a4p-T7-VpL" id="99D-yS-fhT"/>
                                     <outlet property="nameLabel" destination="jdU-kq-nco" id="xYK-XB-MHE"/>
                                     <outlet property="thumbnail" destination="8au-1W-ABL" id="Jl2-df-J9g"/>
-                                    <segue destination="H1P-cc-DW7" kind="push" id="NH7-jX-fuQ"/>
+                                    <segue destination="H1P-cc-DW7" kind="push" identifier="LandingPage2ListPage" id="NH7-jX-fuQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -67,27 +67,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2OC-7r-p2t">
-                            <size key="itemSize" width="143" height="178"/>
+                            <size key="itemSize" width="155" height="195"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellInListPage" id="oeb-cR-H2t" customClass="CellInListPage">
-                                <rect key="frame" x="0.0" y="64" width="143" height="178"/>
+                                <rect key="frame" x="0.0" y="64" width="155" height="195"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="143" height="178"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="155" height="195"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oee-zz-xEW">
-                                            <rect key="frame" x="7" y="9" width="128" height="128"/>
+                                            <rect key="frame" x="13" y="9" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" red="1" green="0.97731879499999996" blue="0.2098101114" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="tintColor" red="1" green="0.97731879499999996" blue="0.2098101114" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-BS-DXZ">
-                                            <rect key="frame" x="7" y="145" width="128" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-BS-DXZ">
+                                            <rect key="frame" x="7" y="145" width="148" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>

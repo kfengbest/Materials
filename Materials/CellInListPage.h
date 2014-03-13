@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface CellInListPage : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;

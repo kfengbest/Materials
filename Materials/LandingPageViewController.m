@@ -11,6 +11,7 @@
 #import "XMLReader/XMLReader.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "CellInLandingPage.h"
+#import "ListPageViewController.h"
 
 @interface LandingPageViewController ()
 {
@@ -132,6 +133,18 @@
     cell.countLabel.text = [dic objectForKey:@"count"];
     
     return cell;
+}
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"LandingPage2ListPage"])
+    {
+        ListPageViewController *detailViewController = [segue destinationViewController];
+        NSDictionary* item = classifications[[self.tableView indexPathForSelectedRow].row];
+        detailViewController.classification = [item objectForKey:@"name"];
+    }
+    
 }
 
 /*
