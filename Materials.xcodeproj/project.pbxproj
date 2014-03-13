@@ -58,6 +58,7 @@
 		12C5FCDB18D1C006001887EE /* Plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCD018D1C006001887EE /* Plastic.png */; };
 		12C5FCDE18D1C420001887EE /* ListPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCDD18D1C420001887EE /* ListPageViewController.m */; };
 		12C5FCE118D1C449001887EE /* CellInListPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCE018D1C449001887EE /* CellInListPage.m */; };
+		12C5FCE718D1EF24001887EE /* CellInDetailPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCE618D1EF24001887EE /* CellInDetailPage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,8 @@
 		12C5FCDD18D1C420001887EE /* ListPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPageViewController.m; sourceTree = "<group>"; };
 		12C5FCDF18D1C449001887EE /* CellInListPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInListPage.h; sourceTree = "<group>"; };
 		12C5FCE018D1C449001887EE /* CellInListPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInListPage.m; sourceTree = "<group>"; };
+		12C5FCE518D1EF24001887EE /* CellInDetailPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInDetailPage.h; sourceTree = "<group>"; };
+		12C5FCE618D1EF24001887EE /* CellInDetailPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInDetailPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,8 @@
 				12C5FCDD18D1C420001887EE /* ListPageViewController.m */,
 				12C5FCDF18D1C449001887EE /* CellInListPage.h */,
 				12C5FCE018D1C449001887EE /* CellInListPage.m */,
+				12C5FCE518D1EF24001887EE /* CellInDetailPage.h */,
+				12C5FCE618D1EF24001887EE /* CellInDetailPage.m */,
 			);
 			path = Materials;
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 				12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */,
 				123087E318C758B900453DDE /* Classification.m in Sources */,
 				123087E618C758CC00453DDE /* Library.m in Sources */,
+				12C5FCE718D1EF24001887EE /* CellInDetailPage.m in Sources */,
 				1210FA1918BB835B009843C0 /* MKNetworkOperation.m in Sources */,
 				1210FA1618BB835B009843C0 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				1210FA1718BB835B009843C0 /* UIImageView+MKNetworkKitAdditions.m in Sources */,

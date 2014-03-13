@@ -10,6 +10,7 @@
 #import"MKNetworkKit.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "XMLReader/XMLReader.h"
+#import "CellInDetailPage.h"
 
 @interface MaterialDetailsViewController ()
 {
@@ -68,12 +69,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    static NSString *CellIdentifier = @"CellInDetailPage";
+    CellInDetailPage *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+ 
+    
+    return cell;
 }
 
 @end
