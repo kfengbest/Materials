@@ -10,7 +10,7 @@
 #import"MKNetworkKit.h"
 #import "XMLReader/XMLReader.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-
+#import "CellInLandingPage.h"
 
 @interface LandingPageViewController ()
 {
@@ -116,7 +116,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CellInLandingPage";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    CellInLandingPage *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     NSDictionary* dic = classifications[indexPath.row];
@@ -125,7 +125,12 @@
     if (range.location != NSNotFound) {
         name = [name substringFromIndex:range.length];
     }
-    cell.textLabel.text = name;
+    
+    NSString* strImageName = [NSString stringWithFormat:@"%@.png",name];
+    cell.thumbnail.image = [UIImage imageNamed:strImageName];
+    cell.nameLabel.text = name;
+    cell.countLabel.text = [dic objectForKey:@"count"];
+    
     return cell;
 }
 

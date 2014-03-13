@@ -45,6 +45,18 @@
 		123087E318C758B900453DDE /* Classification.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E218C758B900453DDE /* Classification.m */; };
 		123087E618C758CC00453DDE /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E518C758CC00453DDE /* Library.m */; };
 		12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCC118D1A587001887EE /* LandingPageViewController.m */; };
+		12C5FCC518D1BB31001887EE /* CellInLandingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCC418D1BB31001887EE /* CellInLandingPage.m */; };
+		12C5FCD118D1C006001887EE /* Appearance Material.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC618D1C006001887EE /* Appearance Material.png */; };
+		12C5FCD218D1C006001887EE /* Ceramic.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC718D1C006001887EE /* Ceramic.png */; };
+		12C5FCD318D1C006001887EE /* Composite.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC818D1C006001887EE /* Composite.png */; };
+		12C5FCD418D1C006001887EE /* Fabric.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC918D1C006001887EE /* Fabric.png */; };
+		12C5FCD518D1C006001887EE /* Gas.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCA18D1C006001887EE /* Gas.png */; };
+		12C5FCD618D1C006001887EE /* Insulation.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCB18D1C006001887EE /* Insulation.png */; };
+		12C5FCD718D1C006001887EE /* Liquid.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCC18D1C006001887EE /* Liquid.png */; };
+		12C5FCD818D1C006001887EE /* Metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCD18D1C006001887EE /* Metal.png */; };
+		12C5FCD918D1C006001887EE /* Natural.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCE18D1C006001887EE /* Natural.png */; };
+		12C5FCDA18D1C006001887EE /* Other.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCF18D1C006001887EE /* Other.png */; };
+		12C5FCDB18D1C006001887EE /* Plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCD018D1C006001887EE /* Plastic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +131,19 @@
 		123087E518C758CC00453DDE /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
 		12C5FCC018D1A587001887EE /* LandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageViewController.h; sourceTree = "<group>"; };
 		12C5FCC118D1A587001887EE /* LandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageViewController.m; sourceTree = "<group>"; };
+		12C5FCC318D1BB31001887EE /* CellInLandingPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInLandingPage.h; sourceTree = "<group>"; };
+		12C5FCC418D1BB31001887EE /* CellInLandingPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInLandingPage.m; sourceTree = "<group>"; };
+		12C5FCC618D1C006001887EE /* Appearance Material.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appearance Material.png"; sourceTree = "<group>"; };
+		12C5FCC718D1C006001887EE /* Ceramic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ceramic.png; sourceTree = "<group>"; };
+		12C5FCC818D1C006001887EE /* Composite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Composite.png; sourceTree = "<group>"; };
+		12C5FCC918D1C006001887EE /* Fabric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fabric.png; sourceTree = "<group>"; };
+		12C5FCCA18D1C006001887EE /* Gas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gas.png; sourceTree = "<group>"; };
+		12C5FCCB18D1C006001887EE /* Insulation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Insulation.png; sourceTree = "<group>"; };
+		12C5FCCC18D1C006001887EE /* Liquid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Liquid.png; sourceTree = "<group>"; };
+		12C5FCCD18D1C006001887EE /* Metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Metal.png; sourceTree = "<group>"; };
+		12C5FCCE18D1C006001887EE /* Natural.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Natural.png; sourceTree = "<group>"; };
+		12C5FCCF18D1C006001887EE /* Other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Other.png; sourceTree = "<group>"; };
+		12C5FCD018D1C006001887EE /* Plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plastic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +230,8 @@
 				123087DB18C752D200453DDE /* MaterialListViewController.m */,
 				12C5FCC018D1A587001887EE /* LandingPageViewController.h */,
 				12C5FCC118D1A587001887EE /* LandingPageViewController.m */,
+				12C5FCC318D1BB31001887EE /* CellInLandingPage.h */,
+				12C5FCC418D1BB31001887EE /* CellInLandingPage.m */,
 			);
 			path = Materials;
 			sourceTree = "<group>";
@@ -212,6 +239,17 @@
 		1210F9C818BB8290009843C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12C5FCC618D1C006001887EE /* Appearance Material.png */,
+				12C5FCC718D1C006001887EE /* Ceramic.png */,
+				12C5FCC818D1C006001887EE /* Composite.png */,
+				12C5FCC918D1C006001887EE /* Fabric.png */,
+				12C5FCCA18D1C006001887EE /* Gas.png */,
+				12C5FCCB18D1C006001887EE /* Insulation.png */,
+				12C5FCCC18D1C006001887EE /* Liquid.png */,
+				12C5FCCD18D1C006001887EE /* Metal.png */,
+				12C5FCCE18D1C006001887EE /* Natural.png */,
+				12C5FCCF18D1C006001887EE /* Other.png */,
+				12C5FCD018D1C006001887EE /* Plastic.png */,
 				1210F9C918BB8290009843C0 /* Materials-Info.plist */,
 				1210F9CA18BB8290009843C0 /* InfoPlist.strings */,
 				1210F9CD18BB8290009843C0 /* main.m */,
@@ -382,10 +420,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1210F9D818BB8290009843C0 /* Main_iPad.storyboard in Resources */,
+				12C5FCD918D1C006001887EE /* Natural.png in Resources */,
 				1210F9DD18BB8290009843C0 /* Images.xcassets in Resources */,
+				12C5FCD218D1C006001887EE /* Ceramic.png in Resources */,
+				12C5FCD818D1C006001887EE /* Metal.png in Resources */,
+				12C5FCD518D1C006001887EE /* Gas.png in Resources */,
+				12C5FCD318D1C006001887EE /* Composite.png in Resources */,
+				12C5FCD718D1C006001887EE /* Liquid.png in Resources */,
 				123087D518C720F800453DDE /* README.md in Resources */,
 				1210F9D518BB8290009843C0 /* Main_iPhone.storyboard in Resources */,
 				1210F9CC18BB8290009843C0 /* InfoPlist.strings in Resources */,
+				12C5FCDA18D1C006001887EE /* Other.png in Resources */,
+				12C5FCD618D1C006001887EE /* Insulation.png in Resources */,
+				12C5FCD118D1C006001887EE /* Appearance Material.png in Resources */,
+				12C5FCDB18D1C006001887EE /* Plastic.png in Resources */,
+				12C5FCD418D1C006001887EE /* Fabric.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +463,7 @@
 				1210F9D218BB8290009843C0 /* AppDelegate.m in Sources */,
 				1210FA1218BB835B009843C0 /* NSData+MKBase64.m in Sources */,
 				123087D618C720F800453DDE /* XMLReader.m in Sources */,
+				12C5FCC518D1BB31001887EE /* CellInLandingPage.m in Sources */,
 				1210F9CE18BB8290009843C0 /* main.m in Sources */,
 				12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */,
 				123087E318C758B900453DDE /* Classification.m in Sources */,
