@@ -40,7 +40,6 @@
 		123087D518C720F800453DDE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 123087D218C720F800453DDE /* README.md */; };
 		123087D618C720F800453DDE /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087D418C720F800453DDE /* XMLReader.m */; };
 		123087D918C7527100453DDE /* MaterialDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087D818C7527100453DDE /* MaterialDetailsViewController.m */; };
-		123087DC18C752D200453DDE /* MaterialListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087DB18C752D200453DDE /* MaterialListViewController.m */; };
 		123087E018C758A500453DDE /* Material.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087DF18C758A500453DDE /* Material.m */; };
 		123087E318C758B900453DDE /* Classification.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E218C758B900453DDE /* Classification.m */; };
 		123087E618C758CC00453DDE /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E518C758CC00453DDE /* Library.m */; };
@@ -57,6 +56,8 @@
 		12C5FCD918D1C006001887EE /* Natural.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCE18D1C006001887EE /* Natural.png */; };
 		12C5FCDA18D1C006001887EE /* Other.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCF18D1C006001887EE /* Other.png */; };
 		12C5FCDB18D1C006001887EE /* Plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCD018D1C006001887EE /* Plastic.png */; };
+		12C5FCDE18D1C420001887EE /* ListPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCDD18D1C420001887EE /* ListPageViewController.m */; };
+		12C5FCE118D1C449001887EE /* CellInListPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCE018D1C449001887EE /* CellInListPage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,8 +122,6 @@
 		123087D418C720F800453DDE /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		123087D718C7527100453DDE /* MaterialDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialDetailsViewController.h; sourceTree = "<group>"; };
 		123087D818C7527100453DDE /* MaterialDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDetailsViewController.m; sourceTree = "<group>"; };
-		123087DA18C752D200453DDE /* MaterialListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialListViewController.h; sourceTree = "<group>"; };
-		123087DB18C752D200453DDE /* MaterialListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialListViewController.m; sourceTree = "<group>"; };
 		123087DE18C758A500453DDE /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
 		123087DF18C758A500453DDE /* Material.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Material.m; sourceTree = "<group>"; };
 		123087E118C758B900453DDE /* Classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classification.h; sourceTree = "<group>"; };
@@ -144,6 +143,10 @@
 		12C5FCCE18D1C006001887EE /* Natural.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Natural.png; sourceTree = "<group>"; };
 		12C5FCCF18D1C006001887EE /* Other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Other.png; sourceTree = "<group>"; };
 		12C5FCD018D1C006001887EE /* Plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plastic.png; sourceTree = "<group>"; };
+		12C5FCDC18D1C420001887EE /* ListPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPageViewController.h; sourceTree = "<group>"; };
+		12C5FCDD18D1C420001887EE /* ListPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPageViewController.m; sourceTree = "<group>"; };
+		12C5FCDF18D1C449001887EE /* CellInListPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInListPage.h; sourceTree = "<group>"; };
+		12C5FCE018D1C449001887EE /* CellInListPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInListPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,12 +229,14 @@
 				1210F9C818BB8290009843C0 /* Supporting Files */,
 				123087D718C7527100453DDE /* MaterialDetailsViewController.h */,
 				123087D818C7527100453DDE /* MaterialDetailsViewController.m */,
-				123087DA18C752D200453DDE /* MaterialListViewController.h */,
-				123087DB18C752D200453DDE /* MaterialListViewController.m */,
 				12C5FCC018D1A587001887EE /* LandingPageViewController.h */,
 				12C5FCC118D1A587001887EE /* LandingPageViewController.m */,
 				12C5FCC318D1BB31001887EE /* CellInLandingPage.h */,
 				12C5FCC418D1BB31001887EE /* CellInLandingPage.m */,
+				12C5FCDC18D1C420001887EE /* ListPageViewController.h */,
+				12C5FCDD18D1C420001887EE /* ListPageViewController.m */,
+				12C5FCDF18D1C449001887EE /* CellInListPage.h */,
+				12C5FCE018D1C449001887EE /* CellInListPage.m */,
 			);
 			path = Materials;
 			sourceTree = "<group>";
@@ -454,16 +459,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1210FA1A18BB835B009843C0 /* Reachability.m in Sources */,
-				123087DC18C752D200453DDE /* MaterialListViewController.m in Sources */,
 				123087D918C7527100453DDE /* MaterialDetailsViewController.m in Sources */,
 				1210F9DB18BB8290009843C0 /* ViewController.m in Sources */,
 				1210FA1818BB835B009843C0 /* MKNetworkEngine.m in Sources */,
 				1210FA1418BB835B009843C0 /* NSDictionary+RequestEncoding.m in Sources */,
 				123087E018C758A500453DDE /* Material.m in Sources */,
 				1210F9D218BB8290009843C0 /* AppDelegate.m in Sources */,
+				12C5FCE118D1C449001887EE /* CellInListPage.m in Sources */,
 				1210FA1218BB835B009843C0 /* NSData+MKBase64.m in Sources */,
 				123087D618C720F800453DDE /* XMLReader.m in Sources */,
 				12C5FCC518D1BB31001887EE /* CellInLandingPage.m in Sources */,
+				12C5FCDE18D1C420001887EE /* ListPageViewController.m in Sources */,
 				1210F9CE18BB8290009843C0 /* main.m in Sources */,
 				12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */,
 				123087E318C758B900453DDE /* Classification.m in Sources */,
