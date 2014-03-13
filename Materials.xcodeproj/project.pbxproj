@@ -44,6 +44,7 @@
 		123087E018C758A500453DDE /* Material.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087DF18C758A500453DDE /* Material.m */; };
 		123087E318C758B900453DDE /* Classification.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E218C758B900453DDE /* Classification.m */; };
 		123087E618C758CC00453DDE /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E518C758CC00453DDE /* Library.m */; };
+		12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCC118D1A587001887EE /* LandingPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,8 @@
 		123087E218C758B900453DDE /* Classification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classification.m; sourceTree = "<group>"; };
 		123087E418C758CC00453DDE /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
 		123087E518C758CC00453DDE /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
+		12C5FCC018D1A587001887EE /* LandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageViewController.h; sourceTree = "<group>"; };
+		12C5FCC118D1A587001887EE /* LandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 				123087D818C7527100453DDE /* MaterialDetailsViewController.m */,
 				123087DA18C752D200453DDE /* MaterialListViewController.h */,
 				123087DB18C752D200453DDE /* MaterialListViewController.m */,
+				12C5FCC018D1A587001887EE /* LandingPageViewController.h */,
+				12C5FCC118D1A587001887EE /* LandingPageViewController.m */,
 			);
 			path = Materials;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				1210FA1218BB835B009843C0 /* NSData+MKBase64.m in Sources */,
 				123087D618C720F800453DDE /* XMLReader.m in Sources */,
 				1210F9CE18BB8290009843C0 /* main.m in Sources */,
+				12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */,
 				123087E318C758B900453DDE /* Classification.m in Sources */,
 				123087E618C758CC00453DDE /* Library.m in Sources */,
 				1210FA1918BB835B009843C0 /* MKNetworkOperation.m in Sources */,
