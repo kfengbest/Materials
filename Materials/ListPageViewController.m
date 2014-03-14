@@ -118,12 +118,13 @@
     NSDictionary* item  = materials[indexPath.row];
     NSString* strTitle = [[item objectForKey:@"title"] objectForKey:@"text"];
     NSString* strImageUri = [[[item objectForKey:@"images"] objectForKey:@"image"] objectForKey:@"uri"];
+    NSString* strAuthedUri = [NSString stringWithFormat:@"%@%@", strImageUri, @"?access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI"];
     
     newCell.nameLabel.text = strTitle;
 
-//    [newCell.imageView setImageWithURL:[NSURL URLWithString:strImageUri] placeholderImage: [UIImage imageNamed:@"Ceramic.png" ]];
+    [newCell.imageView setImageWithURL:[NSURL URLWithString:strAuthedUri] placeholderImage: [UIImage imageNamed:@"Ceramic.png" ]];
 
-    newCell.imageView.image = [UIImage imageNamed:@"Ceramic.png"];
+   // newCell.imageView.image = [UIImage imageNamed:@"Ceramic.png"];
     return newCell;
 }
 
