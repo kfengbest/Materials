@@ -13,7 +13,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "MaterialDetailsViewController.h"
 
-#define kCountPerPage 20
+#define kCountPerPage 10
 
 
 @interface ListPageViewController ()
