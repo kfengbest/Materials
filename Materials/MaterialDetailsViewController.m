@@ -111,9 +111,13 @@
 
 -(NSDictionary*) groupInfoForTab : (NSString*) tabId{
     
+    if (tabId == nil) {
+        return nil;
+    }
+    
     NSDictionary* groupInfo = nil;
     NSString* type = @"identity";
-    if (tabId == type) {
+    if ([tabId compare:type options:NSCaseInsensitiveSearch] == NSOrderedSame) {
         groupInfo = [groupInfos objectForKey:type];
     }else{
         NSString* typeID = [NSString stringWithFormat:@"%@identity.type", tabId ];
