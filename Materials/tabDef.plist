@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Identity</string>
+		<key>id</key>
+		<string>identity</string>
+		<key>condition</key>
+		<string>MaterialIdentity.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Appearance</string>
+		<key>id</key>
+		<string>appearance</string>
+		<key>condition</key>
+		<string>AppearanceIdentity.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Physical</string>
+		<key>id</key>
+		<string>structural</string>
+		<key>condition</key>
+		<string>StructuralIdentity.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fatigue</string>
+		<key>id</key>
+		<string>fatigue</string>
+		<key>condition</key>
+		<string>FatigueIdentity.</string>
+	</dict>
+</array>
+</plist>

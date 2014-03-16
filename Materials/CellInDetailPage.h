@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CellInDetailPage : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *valueLabel;
 
+@property (strong, nonatomic) IBOutlet UILabel *keyLabel;
 @end

@@ -157,6 +157,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="keyLabel" destination="aLV-px-3oF" id="A0f-2U-FRS"/>
+                                            <outlet property="valueLabel" destination="SUN-w3-MUl" id="LiH-sk-epc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
