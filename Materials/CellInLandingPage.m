@@ -1,5 +1,5 @@
 //
-//  CellInLandingPage.m
+//  CellInListPage.m
 //  Materials
 //
 //  Created by Kaven Feng on 3/13/14.
@@ -10,20 +10,22 @@
 
 @implementation CellInLandingPage
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+- (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
     }
     return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
 {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    // Drawing code
 }
+*/
 
 @end

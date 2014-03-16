@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListPageViewController : UICollectionViewController
+@interface ListPageViewController : UITableViewController
 @property (nonatomic,strong)NSString* classification;
 
 @end

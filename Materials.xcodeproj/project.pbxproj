@@ -46,7 +46,6 @@
 		124EFB8518D589F900275A31 /* groupInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 124EFB8418D589F900275A31 /* groupInfo.plist */; };
 		124EFB8718D5AC7500275A31 /* tabDef.plist in Resources */ = {isa = PBXBuildFile; fileRef = 124EFB8618D5AC7500275A31 /* tabDef.plist */; };
 		12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCC118D1A587001887EE /* LandingPageViewController.m */; };
-		12C5FCC518D1BB31001887EE /* CellInLandingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCC418D1BB31001887EE /* CellInLandingPage.m */; };
 		12C5FCD118D1C006001887EE /* Appearance Material.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC618D1C006001887EE /* Appearance Material.png */; };
 		12C5FCD218D1C006001887EE /* Ceramic.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC718D1C006001887EE /* Ceramic.png */; };
 		12C5FCD318D1C006001887EE /* Composite.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC818D1C006001887EE /* Composite.png */; };
@@ -59,7 +58,7 @@
 		12C5FCDA18D1C006001887EE /* Other.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCCF18D1C006001887EE /* Other.png */; };
 		12C5FCDB18D1C006001887EE /* Plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCD018D1C006001887EE /* Plastic.png */; };
 		12C5FCDE18D1C420001887EE /* ListPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCDD18D1C420001887EE /* ListPageViewController.m */; };
-		12C5FCE118D1C449001887EE /* CellInListPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCE018D1C449001887EE /* CellInListPage.m */; };
+		12C5FCE118D1C449001887EE /* CellInLandingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCE018D1C449001887EE /* CellInLandingPage.m */; };
 		12C5FCE718D1EF24001887EE /* CellInDetailPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCE618D1EF24001887EE /* CellInDetailPage.m */; };
 /* End PBXBuildFile section */
 
@@ -135,8 +134,6 @@
 		124EFB8618D5AC7500275A31 /* tabDef.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tabDef.plist; sourceTree = "<group>"; };
 		12C5FCC018D1A587001887EE /* LandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageViewController.h; sourceTree = "<group>"; };
 		12C5FCC118D1A587001887EE /* LandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageViewController.m; sourceTree = "<group>"; };
-		12C5FCC318D1BB31001887EE /* CellInLandingPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInLandingPage.h; sourceTree = "<group>"; };
-		12C5FCC418D1BB31001887EE /* CellInLandingPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInLandingPage.m; sourceTree = "<group>"; };
 		12C5FCC618D1C006001887EE /* Appearance Material.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appearance Material.png"; sourceTree = "<group>"; };
 		12C5FCC718D1C006001887EE /* Ceramic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ceramic.png; sourceTree = "<group>"; };
 		12C5FCC818D1C006001887EE /* Composite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Composite.png; sourceTree = "<group>"; };
@@ -150,8 +147,8 @@
 		12C5FCD018D1C006001887EE /* Plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plastic.png; sourceTree = "<group>"; };
 		12C5FCDC18D1C420001887EE /* ListPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPageViewController.h; sourceTree = "<group>"; };
 		12C5FCDD18D1C420001887EE /* ListPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPageViewController.m; sourceTree = "<group>"; };
-		12C5FCDF18D1C449001887EE /* CellInListPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInListPage.h; sourceTree = "<group>"; };
-		12C5FCE018D1C449001887EE /* CellInListPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInListPage.m; sourceTree = "<group>"; };
+		12C5FCDF18D1C449001887EE /* CellInLandingPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInLandingPage.h; sourceTree = "<group>"; };
+		12C5FCE018D1C449001887EE /* CellInLandingPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInLandingPage.m; sourceTree = "<group>"; };
 		12C5FCE518D1EF24001887EE /* CellInDetailPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInDetailPage.h; sourceTree = "<group>"; };
 		12C5FCE618D1EF24001887EE /* CellInDetailPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellInDetailPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,12 +235,10 @@
 				123087D818C7527100453DDE /* MaterialDetailsViewController.m */,
 				12C5FCC018D1A587001887EE /* LandingPageViewController.h */,
 				12C5FCC118D1A587001887EE /* LandingPageViewController.m */,
-				12C5FCC318D1BB31001887EE /* CellInLandingPage.h */,
-				12C5FCC418D1BB31001887EE /* CellInLandingPage.m */,
 				12C5FCDC18D1C420001887EE /* ListPageViewController.h */,
 				12C5FCDD18D1C420001887EE /* ListPageViewController.m */,
-				12C5FCDF18D1C449001887EE /* CellInListPage.h */,
-				12C5FCE018D1C449001887EE /* CellInListPage.m */,
+				12C5FCDF18D1C449001887EE /* CellInLandingPage.h */,
+				12C5FCE018D1C449001887EE /* CellInLandingPage.m */,
 				12C5FCE518D1EF24001887EE /* CellInDetailPage.h */,
 				12C5FCE618D1EF24001887EE /* CellInDetailPage.m */,
 			);
@@ -478,10 +473,9 @@
 				1210FA1418BB835B009843C0 /* NSDictionary+RequestEncoding.m in Sources */,
 				123087E018C758A500453DDE /* Material.m in Sources */,
 				1210F9D218BB8290009843C0 /* AppDelegate.m in Sources */,
-				12C5FCE118D1C449001887EE /* CellInListPage.m in Sources */,
+				12C5FCE118D1C449001887EE /* CellInLandingPage.m in Sources */,
 				1210FA1218BB835B009843C0 /* NSData+MKBase64.m in Sources */,
 				123087D618C720F800453DDE /* XMLReader.m in Sources */,
-				12C5FCC518D1BB31001887EE /* CellInLandingPage.m in Sources */,
 				12C5FCDE18D1C420001887EE /* ListPageViewController.m in Sources */,
 				1210F9CE18BB8290009843C0 /* main.m in Sources */,
 				12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */,

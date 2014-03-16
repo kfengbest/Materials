@@ -11,7 +11,6 @@
 #import"MKNetworkKit.h"
 #import "XMLReader/XMLReader.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "CellInListPage.h"
 #import "MaterialDetailsViewController.h"
 
 @interface ListPageViewController ()
@@ -29,6 +28,15 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -102,7 +110,7 @@
                 NSArray* contentArray = [listDic objectForKey:@"content"];
                 [materials addObjectsFromArray:contentArray];
                 
-                [self.collectionView reloadData];
+                [self.tableView reloadData];
             }
         }
         
@@ -123,26 +131,35 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
     return [materials count];
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"CellInListPage";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    static NSString* MyCellID = @"CellInListPage";
-    CellInListPage* newCell = [self.collectionView dequeueReusableCellWithReuseIdentifier:MyCellID
-                                                                                   forIndexPath:indexPath];
-    
+    // Configure the cell...
     NSDictionary* item  = materials[indexPath.row];
     NSString* strTitle = [[item objectForKey:@"title"] objectForKey:@"text"];
     NSString* strImageUri = [[[item objectForKey:@"images"] objectForKey:@"image"] objectForKey:@"uri"];
     NSString* strAuthedUri = [NSString stringWithFormat:@"%@%@", strImageUri, @"?access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI"];
     
-    newCell.nameLabel.text = strTitle;
-    [newCell.imageView setImageWithURL:[NSURL URLWithString:strAuthedUri] placeholderImage: [UIImage imageNamed:@"Ceramic.png" ]];
-
-    return newCell;
+    cell.textLabel.text = strTitle;
+    cell.detailTextLabel.text = @"detailed";
+    [cell.imageView setImageWithURL:[NSURL URLWithString:strAuthedUri] placeholderImage: [UIImage imageNamed:@"Ceramic.png" ]];
+    
+    return cell;
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -150,7 +167,7 @@
     if ([[segue identifier] isEqualToString:@"List2DetailSegue"])
     {
         MaterialDetailsViewController *detailViewController = [segue destinationViewController];
-        NSIndexPath* indexPath = (NSIndexPath*)[self.collectionView indexPathsForSelectedItems][0];
+        NSIndexPath* indexPath = (NSIndexPath*)[self.tableView indexPathsForSelectedRows][0];
         NSDictionary* item  = materials[indexPath.row];
         detailViewController.contentId = [item objectForKey:@"contentId"];
     }

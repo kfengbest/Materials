@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LandingPageViewController : UITableViewController
+@interface LandingPageViewController : UICollectionViewController
 
 @end

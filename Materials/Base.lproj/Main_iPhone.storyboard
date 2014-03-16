@@ -1,49 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ax0-8d-tyc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PXw-IS-izy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Landing Page View Controller - Autodesk Materials-->
+        <!--List Page View Controller - Autodesk Materials-->
         <scene sceneID="J4I-yW-K1J">
             <objects>
-                <tableViewController id="NJu-IF-2Nj" customClass="LandingPageViewController" sceneMemberID="viewController">
+                <tableViewController id="NJu-IF-2Nj" customClass="ListPageViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="g02-Hi-b8v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellInLandingPage" rowHeight="70" id="tW4-kX-EBL" customClass="CellInLandingPage">
-                                <rect key="frame" x="0.0" y="86" width="320" height="70"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellInListPage" id="J7U-BR-JD9">
+                                <rect key="frame" x="0.0" y="86" width="320" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tW4-kX-EBL" id="jsp-UU-O7f">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J7U-BR-JD9">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="72"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8au-1W-ABL">
-                                            <rect key="frame" x="10" y="2" width="70" height="64"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdU-kq-nco">
-                                            <rect key="frame" x="100" y="2" width="218" height="36"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4p-T7-VpL">
-                                            <rect key="frame" x="100" y="37" width="218" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="countLabel" destination="a4p-T7-VpL" id="99D-yS-fhT"/>
-                                    <outlet property="nameLabel" destination="jdU-kq-nco" id="xYK-XB-MHE"/>
-                                    <outlet property="thumbnail" destination="8au-1W-ABL" id="Jl2-df-J9g"/>
-                                    <segue destination="H1P-cc-DW7" kind="push" identifier="LandingPage2ListPage" id="NH7-jX-fuQ"/>
+                                    <segue destination="sNT-G6-0UG" kind="push" identifier="List2DetailSegue" id="04l-Uo-tDZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,12 +34,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="occ-lP-Hf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2" y="-22"/>
+            <point key="canvasLocation" x="749" y="17"/>
         </scene>
-        <!--List Page View Controller-->
+        <!--Landing Page View Controller-->
         <scene sceneID="HYj-fZ-Tyq">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="H1P-cc-DW7" customClass="ListPageViewController" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="H1P-cc-DW7" customClass="LandingPageViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="HKf-l9-aG8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +51,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellInListPage" id="oeb-cR-H2t" customClass="CellInListPage">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellInLandingPage" id="oeb-cR-H2t" customClass="CellInLandingPage">
                                 <rect key="frame" x="0.0" y="64" width="155" height="195"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -99,7 +77,7 @@
                                 <connections>
                                     <outlet property="imageView" destination="oee-zz-xEW" id="FxG-Zc-nTJ"/>
                                     <outlet property="nameLabel" destination="Dff-BS-DXZ" id="K11-qi-Lpy"/>
-                                    <segue destination="sNT-G6-0UG" kind="push" identifier="List2DetailSegue" id="nes-aQ-lr6"/>
+                                    <segue destination="NJu-IF-2Nj" kind="push" identifier="LandingPage2ListPage" id="4dS-zA-6SA"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -112,7 +90,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VLP-AK-niH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="-12"/>
+            <point key="canvasLocation" x="253" y="17"/>
         </scene>
         <!--Material Details View Controller-->
         <scene sceneID="3Ot-T3-4OJ">
@@ -210,25 +188,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftB-bf-czZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="-12"/>
+            <point key="canvasLocation" x="1196" y="17"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="12H-4k-ocZ">
+        <scene sceneID="Cvk-PN-UQM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ax0-8d-tyc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PXw-IS-izy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y0X-ev-hHc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BRl-xK-3Tx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="NJu-IF-2Nj" kind="relationship" relationship="rootViewController" id="o4X-uO-tWv"/>
+                        <segue destination="H1P-cc-DW7" kind="relationship" relationship="rootViewController" id="hza-1x-QaV"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OYr-Q2-uKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3o0-hF-p3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-528" y="-22"/>
+            <point key="canvasLocation" x="-189" y="17"/>
         </scene>
     </scenes>
     <resources>
