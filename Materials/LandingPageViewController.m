@@ -142,6 +142,7 @@
         NSIndexPath* indexPath = (NSIndexPath*)[self.collectionView indexPathsForSelectedItems][0];
         NSDictionary* item = classifications[indexPath.row];
         detailViewController.classification = [item objectForKey:@"name"];
+        detailViewController.totalSize = [[item objectForKey:@"count"] integerValue];
     }
 }
 

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PWLoadMoreTableFooterView.h"
 
-@interface ListPageViewController : UITableViewController
+@interface ListPageViewController : UITableViewController<PWLoadMoreTableFooterDelegate>
 @property (nonatomic,strong)NSString* classification;
+@property (nonatomic, assign)NSInteger totalSize;
 
 @end
