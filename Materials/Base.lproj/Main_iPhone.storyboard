@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--List Page View Controller - Autodesk Materials-->
+        <!--List Page View Controller - Classification-->
         <scene sceneID="J4I-yW-K1J">
             <objects>
                 <tableViewController id="NJu-IF-2Nj" customClass="ListPageViewController" sceneMemberID="viewController">
@@ -13,12 +13,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellInListPage" id="J7U-BR-JD9">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellInListPage" textLabel="N7K-AQ-INx" detailTextLabel="JMb-2K-KPR" style="IBUITableViewCellStyleSubtitle" id="J7U-BR-JD9">
                                 <rect key="frame" x="0.0" y="86" width="320" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J7U-BR-JD9">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="72"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N7K-AQ-INx">
+                                            <rect key="frame" x="15" y="18" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JMb-2K-KPR">
+                                            <rect key="frame" x="15" y="40" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="sNT-G6-0UG" kind="push" identifier="List2DetailSegue" id="04l-Uo-tDZ"/>
@@ -30,13 +46,13 @@
                             <outlet property="delegate" destination="NJu-IF-2Nj" id="qN3-QH-D2D"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Autodesk Materials" id="VPZ-mU-gDF"/>
+                    <navigationItem key="navigationItem" title="Classification" id="VPZ-mU-gDF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="occ-lP-Hf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749" y="17"/>
         </scene>
-        <!--Landing Page View Controller-->
+        <!--Landing Page View Controller - Autodesk Material Clasifications-->
         <scene sceneID="HYj-fZ-Tyq">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="H1P-cc-DW7" customClass="LandingPageViewController" sceneMemberID="viewController">
@@ -86,7 +102,7 @@
                             <outlet property="delegate" destination="H1P-cc-DW7" id="dVz-BI-Wiw"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="vsQ-mm-EpP"/>
+                    <navigationItem key="navigationItem" title="Autodesk Material Clasifications" id="vsQ-mm-EpP"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VLP-AK-niH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -151,12 +151,11 @@
     
     // Configure the cell...
     NSDictionary* item  = materials[indexPath.row];
-    NSString* strTitle = [[item objectForKey:@"title"] objectForKey:@"text"];
     NSString* strImageUri = [[[item objectForKey:@"images"] objectForKey:@"image"] objectForKey:@"uri"];
     NSString* strAuthedUri = [NSString stringWithFormat:@"%@%@", strImageUri, @"?access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI"];
     
-    cell.textLabel.text = strTitle;
-    cell.detailTextLabel.text = @"detailed";
+    cell.textLabel.text = [[item objectForKey:@"title"] objectForKey:@"text"];
+    cell.detailTextLabel.text = [[item objectForKey:@"description"] objectForKey:@"text"];
     [cell.imageView setImageWithURL:[NSURL URLWithString:strAuthedUri] placeholderImage: [UIImage imageNamed:@"Ceramic.png" ]];
     
     return cell;
