@@ -10,6 +10,8 @@
 
 @interface MaterialDetailsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+- (IBAction)onSegmentChanged:(id)sender;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentCtrl;
 @property (nonatomic,strong)NSString* uuid;
 @property (strong, nonatomic) IBOutlet UITableView *mTableView;
 @end

@@ -17,7 +17,6 @@
     NSDictionary* dict;
     NSDictionary *groupInfos;
     NSMutableArray* visibleTabs;
-
 }
 @end
 
@@ -97,6 +96,16 @@
         }
         
     }
+    
+    // UI
+    for (int i = 0; i < [visibleTabs count]; i++) {
+        NSString* strTitle = [visibleTabs[i] objectForKey:@"name"];
+        if (i >= self.segmentCtrl.numberOfSegments) {
+            [self.segmentCtrl insertSegmentWithTitle:strTitle atIndex:i animated:YES];
+        }
+        [self.segmentCtrl setTitle:strTitle forSegmentAtIndex:i];
+    }
+
     
 }
 
@@ -186,7 +195,9 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSDictionary* groupInfo = [self groupInfoForTab:@"appearance"];
+    int index = self.segmentCtrl.selectedSegmentIndex;
+    NSString* tabId = [visibleTabs[index] objectForKey:@"id"];
+    NSDictionary* groupInfo = [self groupInfoForTab: tabId];
     NSArray* groups = [groupInfo objectForKey:@"groups"];
 
     return [groups count];
@@ -194,7 +205,9 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    NSDictionary* groupInfo = [self groupInfoForTab:@"appearance"];
+    int index = self.segmentCtrl.selectedSegmentIndex;
+    NSString* tabId = [visibleTabs[index] objectForKey:@"id"];
+    NSDictionary* groupInfo = [self groupInfoForTab:tabId];
     NSArray* groups = [groupInfo objectForKey:@"groups"];
     NSDictionary* group = groups[section];
     
@@ -203,7 +216,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSDictionary* groupInfo = [self groupInfoForTab:@"appearance"];
+    int index = self.segmentCtrl.selectedSegmentIndex;
+    NSString* tabId = [visibleTabs[index] objectForKey:@"id"];
+    
+    NSDictionary* groupInfo = [self groupInfoForTab:tabId];
     NSArray* groups = [groupInfo objectForKey:@"groups"];
     NSArray* properties = [groups[section] objectForKey:@"properties"];
 
@@ -215,11 +231,35 @@
     static NSString *CellIdentifier = @"CellInDetailPage";
     CellInDetailPage *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
  
-    NSDictionary* groupInfo = [self groupInfoForTab:@"appearance"];
+    int index = self.segmentCtrl.selectedSegmentIndex;
+    NSString* tabId = [visibleTabs[index] objectForKey:@"id"];
+    NSDictionary* groupInfo = [self groupInfoForTab:tabId];
 
     [self generateGroupsInOneTab:groupInfo forCell:cell forIndexPath:indexPath];
     
     return cell;
 }
 
+- (IBAction)onSegmentChanged:(id)sender {
+    
+//    UISegmentedControl* control = (UISegmentedControl*)sender;
+//    switch (control.selectedSegmentIndex) {
+//        case 0:
+//            NSLog(@"0");
+//            break;
+//        case 1:
+//            NSLog(@"1");
+//
+//            break;
+//        case 2:
+//            NSLog(@"2");
+//
+//            break;
+//        default:
+//            break;
+//    }
+    
+    [self.mTableView reloadData];
+    
+}
 @end

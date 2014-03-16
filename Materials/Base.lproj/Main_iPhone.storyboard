@@ -194,8 +194,10 @@
                                     <segment title="Identity"/>
                                     <segment title="Appearance"/>
                                     <segment title="Physical"/>
-                                    <segment title="Fatigue"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSegmentChanged:" destination="sNT-G6-0UG" eventType="valueChanged" id="yFI-z4-DcH"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -203,6 +205,7 @@
                     <navigationItem key="navigationItem" id="jgT-Uf-5kt"/>
                     <connections>
                         <outlet property="mTableView" destination="Va4-Pd-MEI" id="eHe-rJ-UhA"/>
+                        <outlet property="segmentCtrl" destination="Sak-C0-Dbs" id="SXe-Go-Xgk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftB-bf-czZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
