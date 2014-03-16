@@ -43,6 +43,7 @@
 		123087E018C758A500453DDE /* Material.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087DF18C758A500453DDE /* Material.m */; };
 		123087E318C758B900453DDE /* Classification.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E218C758B900453DDE /* Classification.m */; };
 		123087E618C758CC00453DDE /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 123087E518C758CC00453DDE /* Library.m */; };
+		124EFB8518D589F900275A31 /* groupInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 124EFB8418D589F900275A31 /* groupInfo.plist */; };
 		12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCC118D1A587001887EE /* LandingPageViewController.m */; };
 		12C5FCC518D1BB31001887EE /* CellInLandingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCC418D1BB31001887EE /* CellInLandingPage.m */; };
 		12C5FCD118D1C006001887EE /* Appearance Material.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC618D1C006001887EE /* Appearance Material.png */; };
@@ -129,6 +130,7 @@
 		123087E218C758B900453DDE /* Classification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classification.m; sourceTree = "<group>"; };
 		123087E418C758CC00453DDE /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
 		123087E518C758CC00453DDE /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
+		124EFB8418D589F900275A31 /* groupInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = groupInfo.plist; sourceTree = "<group>"; };
 		12C5FCC018D1A587001887EE /* LandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageViewController.h; sourceTree = "<group>"; };
 		12C5FCC118D1A587001887EE /* LandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageViewController.m; sourceTree = "<group>"; };
 		12C5FCC318D1BB31001887EE /* CellInLandingPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellInLandingPage.h; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				1210F9CA18BB8290009843C0 /* InfoPlist.strings */,
 				1210F9CD18BB8290009843C0 /* main.m */,
 				1210F9CF18BB8290009843C0 /* Materials-Prefix.pch */,
+				124EFB8418D589F900275A31 /* groupInfo.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1210F9D818BB8290009843C0 /* Main_iPad.storyboard in Resources */,
+				124EFB8518D589F900275A31 /* groupInfo.plist in Resources */,
 				12C5FCD918D1C006001887EE /* Natural.png in Resources */,
 				1210F9DD18BB8290009843C0 /* Images.xcassets in Resources */,
 				12C5FCD218D1C006001887EE /* Ceramic.png in Resources */,

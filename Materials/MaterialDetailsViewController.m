@@ -15,6 +15,8 @@
 @interface MaterialDetailsViewController ()
 {
     NSDictionary *dict;
+    NSDictionary *groupInfos;
+
 }
 @end
 
@@ -33,6 +35,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString* path  = [[NSBundle mainBundle] pathForResource:@"groupInfo" ofType:@"plist"];
+    groupInfos = [[NSDictionary alloc] initWithContentsOfFile:path];
+ 
+    
 	// Do any additional setup after loading the view.
     
     //    http://exchange.services-staging.autodesk.com/Search/restapi/v1/contents?q=contentId:3177e620-51b6-4b1b-b85e-3863c15b4b57&detail=5&access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI
@@ -60,6 +67,7 @@
     [engine enqueueOperation:op];
     
 }
+
 
 - (void)didReceiveMemoryWarning
 {
