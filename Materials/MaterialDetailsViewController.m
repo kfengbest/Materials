@@ -21,7 +21,7 @@
 @end
 
 @implementation MaterialDetailsViewController
-@synthesize uuid;
+@synthesize contentId;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,7 +45,8 @@
     
     MKNetworkEngine *engine = [[MKNetworkEngine alloc] initWithHostName:@"exchange.services-staging.autodesk.com" customHeaderFields:nil];
     NSMutableDictionary *dic=[[NSMutableDictionary alloc] init];
-    [dic setObject:@"contentId:3177e620-51b6-4b1b-b85e-3863c15b4b57" forKey:@"q"];
+    NSString* strContentId = [NSString stringWithFormat:@"contentId:%@",self.contentId];
+    [dic setObject: strContentId forKey:@"q"];
     [dic setObject: @"5" forKey:@"detail"];
     [dic setObject: @"GC---Y0DMq0bzUwoyIAagT6qG1L9kHI" forKey:@"access_token"];
     

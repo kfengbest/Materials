@@ -99,7 +99,7 @@
                                 <connections>
                                     <outlet property="imageView" destination="oee-zz-xEW" id="FxG-Zc-nTJ"/>
                                     <outlet property="nameLabel" destination="Dff-BS-DXZ" id="K11-qi-Lpy"/>
-                                    <segue destination="sNT-G6-0UG" kind="push" id="nes-aQ-lr6"/>
+                                    <segue destination="sNT-G6-0UG" kind="push" identifier="List2DetailSegue" id="nes-aQ-lr6"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftB-bf-czZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987" y="-12"/>
+            <point key="canvasLocation" x="1052" y="-12"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="12H-4k-ocZ">

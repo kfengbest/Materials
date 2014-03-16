@@ -12,6 +12,6 @@
 
 - (IBAction)onSegmentChanged:(id)sender;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentCtrl;
-@property (nonatomic,strong)NSString* uuid;
+@property (nonatomic,strong)NSString* contentId;
 @property (strong, nonatomic) IBOutlet UITableView *mTableView;
 @end

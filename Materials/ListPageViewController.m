@@ -12,6 +12,7 @@
 #import "XMLReader/XMLReader.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "CellInListPage.h"
+#import "MaterialDetailsViewController.h"
 
 @interface ListPageViewController ()
 {
@@ -121,11 +122,21 @@
     NSString* strAuthedUri = [NSString stringWithFormat:@"%@%@", strImageUri, @"?access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI"];
     
     newCell.nameLabel.text = strTitle;
-
     [newCell.imageView setImageWithURL:[NSURL URLWithString:strAuthedUri] placeholderImage: [UIImage imageNamed:@"Ceramic.png" ]];
 
-   // newCell.imageView.image = [UIImage imageNamed:@"Ceramic.png"];
     return newCell;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"List2DetailSegue"])
+    {
+        MaterialDetailsViewController *detailViewController = [segue destinationViewController];
+        NSIndexPath* indexPath = (NSIndexPath*)[self.collectionView indexPathsForSelectedItems][0];
+        NSDictionary* item  = materials[indexPath.row];
+        detailViewController.contentId = [item objectForKey:@"contentId"];
+    }
+    
 }
 
 @end
