@@ -172,7 +172,7 @@
     
     cell.textLabel.text = [[item objectForKey:@"title"] objectForKey:@"text"];
     cell.detailTextLabel.text = [[item objectForKey:@"description"] objectForKey:@"text"];
-    [cell.imageView setImageWithURL:[NSURL URLWithString:strAuthedUri] placeholderImage: [UIImage imageNamed:@"Ceramic.png" ]];
+    [cell.imageView setImageWithURL:[NSURL URLWithString:strAuthedUri] placeholderImage: [UIImage imageNamed:@"LoadingPlaceHolder.png" ]];
     
     return cell;
 }
