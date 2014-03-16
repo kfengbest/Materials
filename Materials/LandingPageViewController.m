@@ -16,6 +16,8 @@
 @interface LandingPageViewController ()
 {
     NSMutableArray* classifications;
+    UIActivityIndicatorView* indicator;
+
 }
 @end
 
@@ -34,6 +36,15 @@
 {
     [super viewDidLoad];
 
+    indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+    [indicator setCenter:CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height / 2)];
+    indicator.backgroundColor = [UIColor grayColor];
+    indicator.alpha = 0.9;
+    indicator.layer.cornerRadius = 6;
+    indicator.layer.masksToBounds = YES;
+    [self.view addSubview:indicator];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -47,6 +58,7 @@
 
 -(void) loadMaterials{
     
+    [indicator startAnimating];
     
     MKNetworkEngine *engine = [[MKNetworkEngine alloc] initWithHostName:@"exchange.services-staging.autodesk.com" customHeaderFields:nil];
     NSMutableDictionary *dic=[[NSMutableDictionary alloc] init];
@@ -80,7 +92,8 @@
                         }
                         
                         [self.tableView reloadData];
-
+                        
+                        [indicator stopAnimating];
                     }
                 }
             }
@@ -89,6 +102,7 @@
         
     }errorHandler:^(MKNetworkOperation *errorOp, NSError* err) {
         NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
+        [indicator stopAnimating];
     }];
     [engine enqueueOperation:op];
     

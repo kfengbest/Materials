@@ -14,6 +14,8 @@
 
 @interface MaterialDetailsViewController ()
 {
+    UIActivityIndicatorView* indicator;
+
     NSDictionary* dict;
     NSDictionary *groupInfos;
     NSMutableArray* visibleTabs;
@@ -36,6 +38,15 @@
 {
     [super viewDidLoad];
     
+    indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+    [indicator setCenter:CGPointMake(self.mTableView.frame.size.width / 2, self.mTableView.frame.size.height / 2)];
+    indicator.backgroundColor = [UIColor grayColor];
+    indicator.alpha = 0.9;
+    indicator.layer.cornerRadius = 6;
+    indicator.layer.masksToBounds = YES;
+    [self.mTableView addSubview:indicator];
+    
     NSString* path  = [[NSBundle mainBundle] pathForResource:@"groupInfo" ofType:@"plist"];
     groupInfos = [[NSDictionary alloc] initWithContentsOfFile:path];
  
@@ -49,6 +60,8 @@
     [dic setObject: strContentId forKey:@"q"];
     [dic setObject: @"5" forKey:@"detail"];
     [dic setObject: @"GC---Y0DMq0bzUwoyIAagT6qG1L9kHI" forKey:@"access_token"];
+    
+    [indicator startAnimating];
     
     MKNetworkOperation *op = [engine operationWithPath:@"/Search/restapi/v1/contents" params:dic httpMethod:@"GET" ssl:NO];
     [op addCompletionHandler:^(MKNetworkOperation *operation) {
@@ -71,8 +84,11 @@
                 }
             }
         }
+        
+        [indicator stopAnimating];
 
     }errorHandler:^(MKNetworkOperation *errorOp, NSError* err) {
+        [indicator stopAnimating];
         NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
     }];
     [engine enqueueOperation:op];
