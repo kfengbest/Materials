@@ -126,8 +126,16 @@
             NSDictionary* listDic = [dict objectForKey:@"list"];
             if (listDic != NULL) {
                 
-                NSArray* contentArray = [listDic objectForKey:@"content"];
-                [materials addObjectsFromArray:contentArray];
+                NSString* strSize = [listDic objectForKey:@"size"];
+                NSInteger nSize = [strSize integerValue];
+                if (nSize == 1) {
+                    NSDictionary* item = [listDic objectForKey:@"content"];
+                    [materials addObject:item];
+                } else if(nSize > 1){
+                    NSArray* contentArray = [listDic objectForKey:@"content"];
+                    [materials addObjectsFromArray:contentArray];
+                }
+                
                 
                 [self doneLoadingTableViewData];
             }

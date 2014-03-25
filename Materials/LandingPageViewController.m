@@ -54,6 +54,9 @@
     
     [indicator startAnimating];
     
+    // http://exchange.services-staging.autodesk.com/Search/restapi/v1/contents?facet.field=compoCategoryL2&facet=true&rows=1&facet.mincount=1&access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI
+    
+    
     MKNetworkEngine *engine = [[MKNetworkEngine alloc] initWithHostName:@"exchange.services-staging.autodesk.com" customHeaderFields:nil];
     NSMutableDictionary *dic=[[NSMutableDictionary alloc] init];
     [dic setObject:@"compoCategoryL2" forKey:@"facet.field"];
