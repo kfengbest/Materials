@@ -130,7 +130,6 @@
                                 <segments>
                                     <segment title="Identity"/>
                                     <segment title="Appearance"/>
-                                    <segment title="Physical"/>
                                 </segments>
                                 <connections>
                                     <action selector="onSegmentChanged:" destination="mnT-DN-xFy" eventType="valueChanged" id="Hxk-lg-NBq"/>
@@ -176,7 +175,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="JUq-4L-xWC">
                                 <rect key="frame" x="5" y="149" width="144" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="5az-1Y-kTz">
@@ -259,7 +258,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="173" translatesAutoresizingMaskIntoConstraints="NO" id="Ijx-ea-Ce5">
                                 <rect key="frame" x="142" y="68" width="173" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -275,7 +274,6 @@
                                 <segments>
                                     <segment title="Identity"/>
                                     <segment title="Appearance"/>
-                                    <segment title="Physical"/>
                                 </segments>
                                 <connections>
                                     <action selector="onSegmentChanged:" destination="sNT-G6-0UG" eventType="valueChanged" id="yFI-z4-DcH"/>

@@ -162,7 +162,6 @@
                                 <segments>
                                     <segment title="Identity"/>
                                     <segment title="Apperance"/>
-                                    <segment title="Physical"/>
                                 </segments>
                                 <connections>
                                     <action selector="onSegmentChanged:" destination="NKM-bG-KTx" eventType="valueChanged" id="jEb-8W-YGU"/>
