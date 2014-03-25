@@ -66,6 +66,8 @@
     
     //    http://exchange.services-staging.autodesk.com/Search/restapi/v1/contents?q=contentId:3177e620-51b6-4b1b-b85e-3863c15b4b57&detail=5&access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI
     
+    // image:  https://exchange.services-staging.autodesk.com/Content/restapi/v2/image/MjAwNzEyMDcxMzQ5MzkzL2FhODVlYmY0LWU5MTAtNDU4OS05ZmVmLTk3YjViODdiM2Q5MS80LjEvaW1hZ2VzL01hdHMvUGxhc3RpY1ZpbnlsL1ByZXNldHMvdF9QbGFzdGljLTAxNi5wbmc?access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI
+    
     MKNetworkEngine *engine = [[MKNetworkEngine alloc] initWithHostName:@"exchange.services-staging.autodesk.com" customHeaderFields:nil];
     NSMutableDictionary *dic=[[NSMutableDictionary alloc] init];
     NSString* strContentId = [NSString stringWithFormat:@"contentId:%@",self.contentId];
@@ -93,6 +95,16 @@
                     [self loadVisibleTabs:dict];
                     
                     [self.mTableView reloadData];
+                    
+                    self.titleLabel.text = [[dict objectForKey:@"title"] objectForKey:@"text"];
+                    self.descriptionLabel.text = [[dict objectForKey:@"description"] objectForKey:@"text"];
+                //    self.publishDateLabel.text = [[dict objectForKey:@"publishDate"] objectForKey:@"date"];
+                //    self.LibraryLabel.text = [[[[dict objectForKey:@"relatedContents"] objectForKey:@"content"] objectForKey:@"title"] objectForKey:@"text"];
+                    
+                    NSString* thumbUrl = [[[dict objectForKey:@"images"] objectForKey:@"image"] objectForKey:@"uri"];
+                    NSString* thumbUrlFull = [NSString stringWithFormat:@"%@?access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI", thumbUrl];
+                    
+                    [self.thumbnailImage setImageWithURL:[NSURL URLWithString:thumbUrlFull] placeholderImage: [UIImage imageNamed:@"LoadingPlaceHolder.png" ]];
                 }
             }
         }

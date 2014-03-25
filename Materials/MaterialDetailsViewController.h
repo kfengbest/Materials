@@ -13,5 +13,10 @@
 - (IBAction)onSegmentChanged:(id)sender;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentCtrl;
 @property (nonatomic,strong)NSString* contentId;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (strong, nonatomic) IBOutlet UILabel *publishDateLabel;
+@property (strong, nonatomic) IBOutlet UILabel *LibraryLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *thumbnailImage;
 @property (strong, nonatomic) IBOutlet UITableView *mTableView;
 @end
