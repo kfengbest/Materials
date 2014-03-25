@@ -14,5 +14,8 @@
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentCtrl;
 @property (nonatomic,strong)NSString* contentId;
 @property (strong, nonatomic) IBOutlet UITableView *mTableView;
+@property (strong, nonatomic) IBOutlet UIImageView *thumbnailImage;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end

@@ -82,6 +82,16 @@
                     [self loadVisibleTabs:dict];
                     
                     [self.mTableView reloadData];
+                    
+                    
+                    self.titleLabel.text = [[dict objectForKey:@"title"] objectForKey:@"text"];
+                    self.descriptionLabel.text = [[dict objectForKey:@"description"] objectForKey:@"text"];
+
+                    
+                    NSString* thumbUrl = [[[dict objectForKey:@"images"] objectForKey:@"image"] objectForKey:@"uri"];
+                    NSString* thumbUrlFull = [NSString stringWithFormat:@"%@?access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI", thumbUrl];
+                    
+                    [self.thumbnailImage setImageWithURL:[NSURL URLWithString:thumbUrlFull] placeholderImage: [UIImage imageNamed:@"LoadingPlaceHolder.png" ]];
                 }
             }
         }
