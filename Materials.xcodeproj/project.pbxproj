@@ -47,6 +47,7 @@
 		124EFB8718D5AC7500275A31 /* tabDef.plist in Resources */ = {isa = PBXBuildFile; fileRef = 124EFB8618D5AC7500275A31 /* tabDef.plist */; };
 		124EFB8D18D6543300275A31 /* PWLoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 124EFB8C18D6543300275A31 /* PWLoadMoreTableFooterView.m */; };
 		124EFB8F18D6678800275A31 /* LoadingPlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 124EFB8E18D6678800275A31 /* LoadingPlaceHolder.png */; };
+		12979C1918E1A6B100A3C923 /* MaterialDetailsViewControllerLS.m in Sources */ = {isa = PBXBuildFile; fileRef = 12979C1818E1A6B100A3C923 /* MaterialDetailsViewControllerLS.m */; };
 		12C5FCC218D1A587001887EE /* LandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5FCC118D1A587001887EE /* LandingPageViewController.m */; };
 		12C5FCD118D1C006001887EE /* Appearance Material.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC618D1C006001887EE /* Appearance Material.png */; };
 		12C5FCD218D1C006001887EE /* Ceramic.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C5FCC718D1C006001887EE /* Ceramic.png */; };
@@ -137,6 +138,8 @@
 		124EFB8B18D6543300275A31 /* PWLoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWLoadMoreTableFooterView.h; sourceTree = "<group>"; };
 		124EFB8C18D6543300275A31 /* PWLoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWLoadMoreTableFooterView.m; sourceTree = "<group>"; };
 		124EFB8E18D6678800275A31 /* LoadingPlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadingPlaceHolder.png; sourceTree = "<group>"; };
+		12979C1718E1A6B100A3C923 /* MaterialDetailsViewControllerLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialDetailsViewControllerLS.h; sourceTree = "<group>"; };
+		12979C1818E1A6B100A3C923 /* MaterialDetailsViewControllerLS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDetailsViewControllerLS.m; sourceTree = "<group>"; };
 		12C5FCC018D1A587001887EE /* LandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageViewController.h; sourceTree = "<group>"; };
 		12C5FCC118D1A587001887EE /* LandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageViewController.m; sourceTree = "<group>"; };
 		12C5FCC618D1C006001887EE /* Appearance Material.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appearance Material.png"; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 				1210F9C818BB8290009843C0 /* Supporting Files */,
 				123087D718C7527100453DDE /* MaterialDetailsViewController.h */,
 				123087D818C7527100453DDE /* MaterialDetailsViewController.m */,
+				12979C1718E1A6B100A3C923 /* MaterialDetailsViewControllerLS.h */,
+				12979C1818E1A6B100A3C923 /* MaterialDetailsViewControllerLS.m */,
 				12C5FCC018D1A587001887EE /* LandingPageViewController.h */,
 				12C5FCC118D1A587001887EE /* LandingPageViewController.m */,
 				12C5FCDC18D1C420001887EE /* ListPageViewController.h */,
@@ -496,6 +501,7 @@
 				1210FA1618BB835B009843C0 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				1210FA1718BB835B009843C0 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				1210FA1118BB835B009843C0 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				12979C1918E1A6B100A3C923 /* MaterialDetailsViewControllerLS.m in Sources */,
 				1210FA1518BB835B009843C0 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				1210FA1318BB835B009843C0 /* NSDate+RFC1123.m in Sources */,
 			);

@@ -1,33 +1,30 @@
 //
-//  MaterialDetailsViewController.m
+//  MaterialDetailsViewControllerLS.m
 //  Materials
 //
-//  Created by Kaven Feng on 3/5/14.
+//  Created by Kaven Feng on 3/25/14.
 //  Copyright (c) 2014 Kaven Feng. All rights reserved.
 //
 
-#import "MaterialDetailsViewController.h"
+#import "MaterialDetailsViewControllerLS.h"
 #import"MKNetworkKit.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "XMLReader/XMLReader.h"
 #import "CellInDetailPage.h"
-#import "MaterialDetailsViewControllerLS.h"
 
-
-@interface MaterialDetailsViewController ()
+@interface MaterialDetailsViewControllerLS ()
 {
     UIActivityIndicatorView* indicator;
-
+    
     NSDictionary* dict;
     NSDictionary *groupInfos;
     NSMutableArray* visibleTabs;
-    
-    BOOL isShowingLandscapeView;
 }
 @end
 
-@implementation MaterialDetailsViewController
+@implementation MaterialDetailsViewControllerLS
 @synthesize contentId;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,14 +39,6 @@
 {
     [super viewDidLoad];
     
-    isShowingLandscapeView = NO;
-    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(orientationChanged:)
-                                                 name:UIDeviceOrientationDidChangeNotification
-                                               object:nil];
-    
-    
     indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
     [indicator setCenter:CGPointMake(self.mTableView.frame.size.width / 2, self.mTableView.frame.size.height / 2)];
@@ -61,7 +50,7 @@
     
     NSString* path  = [[NSBundle mainBundle] pathForResource:@"groupInfo" ofType:@"plist"];
     groupInfos = [[NSDictionary alloc] initWithContentsOfFile:path];
- 
+    
 	// Do any additional setup after loading the view.
     
     //    http://exchange.services-staging.autodesk.com/Search/restapi/v1/contents?q=contentId:3177e620-51b6-4b1b-b85e-3863c15b4b57&detail=5&access_token=GC---Y0DMq0bzUwoyIAagT6qG1L9kHI
@@ -82,14 +71,14 @@
         NSError *error = nil;
         
         NSDictionary* xmlData = [XMLReader dictionaryForXMLData:data
-                                                     options:XMLReaderOptionsProcessNamespaces
-                                                       error:&error];
+                                                        options:XMLReaderOptionsProcessNamespaces
+                                                          error:&error];
         if (xmlData != NULL && [xmlData count] == 1) {
             NSDictionary* dic = [xmlData objectForKey:@"list"];
             if (dic != NULL) {
                 dict = [dic objectForKey:@"content"];
                 if (dict != NULL) {
-
+                    
                     [self loadVisibleTabs:dict];
                     
                     [self.mTableView reloadData];
@@ -98,7 +87,7 @@
         }
         
         [indicator stopAnimating];
-
+        
     }errorHandler:^(MKNetworkOperation *errorOp, NSError* err) {
         [indicator stopAnimating];
         NSLog(@"MKNetwork request error : %@", [err localizedDescription]);
@@ -106,25 +95,6 @@
     [engine enqueueOperation:op];
     
 }
-
-- (void)orientationChanged:(NSNotification *)notification
-{
-    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
-    if (UIDeviceOrientationIsLandscape(deviceOrientation) &&
-        !isShowingLandscapeView)
-    {
-        [self performSegueWithIdentifier:@"DisplayAlternateView" sender:self];
-        isShowingLandscapeView = YES;
-    }
-    else if (UIDeviceOrientationIsPortrait(deviceOrientation) &&
-             isShowingLandscapeView)
-    {
-        [self dismissViewControllerAnimated:YES completion:nil];
-        isShowingLandscapeView = NO;
-    }
-}
-
-
 
 -(void) loadVisibleTabs : (NSDictionary*) product{
     visibleTabs = [[NSMutableArray alloc] init];
@@ -153,7 +123,7 @@
         }
         [self.segmentCtrl setTitle:strTitle forSegmentAtIndex:i];
     }
-
+    
     
 }
 
@@ -182,11 +152,11 @@
     
     NSArray* groups = [groupInfo objectForKey:@"groups"];
     NSDictionary* group = groups[indexPath.section];
-
+    
     NSString* prefix = [group objectForKey:@"prefix"];
     NSArray* properties = [group objectForKey:@"properties"];
     NSDictionary* property = properties[indexPath.row];
-
+    
     NSString* name = [property objectForKey:@"name"];
     NSString* keyword = [NSString stringWithFormat:@"%@%@", prefix, name ];
     NSDictionary* valueDic = [self findByKeyword:keyword fromDictionary:dict];
@@ -222,13 +192,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)onSegmentChanged:(id)sender {
+    
+    [self.mTableView reloadData];
+}
+
+
+#pragma mark - Table view data source
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     int index = self.segmentCtrl.selectedSegmentIndex;
     NSString* tabId = [visibleTabs[index] objectForKey:@"id"];
     NSDictionary* groupInfo = [self groupInfoForTab: tabId];
     NSArray* groups = [groupInfo objectForKey:@"groups"];
-
+    
     return [groups count];
 }
 
@@ -251,7 +230,7 @@
     NSDictionary* groupInfo = [self groupInfoForTab:tabId];
     NSArray* groups = [groupInfo objectForKey:@"groups"];
     NSArray* properties = [groups[section] objectForKey:@"properties"];
-
+    
     return [properties count];
 }
 
@@ -259,46 +238,15 @@
 {
     static NSString *CellIdentifier = @"CellInDetailPage";
     CellInDetailPage *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
- 
+    
     int index = self.segmentCtrl.selectedSegmentIndex;
     NSString* tabId = [visibleTabs[index] objectForKey:@"id"];
     NSDictionary* groupInfo = [self groupInfoForTab:tabId];
-
+    
     [self generateGroupsInOneTab:groupInfo forCell:cell forIndexPath:indexPath];
     
     return cell;
 }
 
-- (IBAction)onSegmentChanged:(id)sender {
-    
-//    UISegmentedControl* control = (UISegmentedControl*)sender;
-//    switch (control.selectedSegmentIndex) {
-//        case 0:
-//            NSLog(@"0");
-//            break;
-//        case 1:
-//            NSLog(@"1");
-//
-//            break;
-//        case 2:
-//            NSLog(@"2");
-//
-//            break;
-//        default:
-//            break;
-//    }
-    
-    [self.mTableView reloadData];
-    
-}
 
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"DisplayAlternateView"])
-    {
-        MaterialDetailsViewControllerLS *detailViewController = [segue destinationViewController];
-        detailViewController.contentId = self.contentId;
-    }
-    
-}
 @end
