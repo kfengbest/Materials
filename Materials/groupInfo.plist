@@ -23,39 +23,6 @@
 						<key>name</key>
 						<string>physmat_Type</string>
 					</dict>
-					<dict>
-						<key>name</key>
-						<string>physmat_Comments</string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>physmat_Keywords</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Product Information</string>
-				<key>prefix</key>
-				<string>MaterialIdentity.</string>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>physmat_Manufacturer</string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>physmat_Model</string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>physmat_Cost</string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>physmat_URL</string>
-					</dict>
 				</array>
 			</dict>
 		</array>
@@ -2489,10 +2456,6 @@
 						<key>name</key>
 						<string>structural_source</string>
 					</dict>
-					<dict>
-						<key>name</key>
-						<string>structural_sourceURL</string>
-					</dict>
 				</array>
 			</dict>
 			<dict>
@@ -2542,10 +2505,6 @@
 					<dict>
 						<key>name</key>
 						<string>structural_Density</string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>structural_Damping_ratio</string>
 					</dict>
 				</array>
 			</dict>
